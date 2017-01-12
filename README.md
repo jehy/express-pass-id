@@ -1,5 +1,7 @@
 #Express-Pass-Id
 
+[![Build Status](https://travis-ci.org/jehy/express-pass-id.svg?branch=master)](https://travis-ci.org/jehy/express-pass-id)
+
 Simple express middleware module, inspired by [express-request-id](https://www.npmjs.com/package/express-request-id).
 
 It allows passing prefixes for unique request IDs and using custom headers (because x-request-id is often already used).
