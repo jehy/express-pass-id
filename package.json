@@ -1,6 +1,6 @@
 {
   "name": "express-pass-id",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple middleware for passing request id",
   "main": "id.js",
   "scripts": {},
@@ -8,8 +8,7 @@
     "type": "git",
     "url": "https://github.com/jehy/express-pass-id"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Jehy",
   "license": "MIT",
   "dependencies": {
