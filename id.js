@@ -9,11 +9,14 @@ module.exports = function (config) {
   return function (req, res, next) {
     var id = uuid.v4();//very random id
     //get or set request id
+    if (!has(config, 'header') || !has(config, 'prefix')) {
+      throw new Error('Invalid config for express-pass-id');
+    }
     if (has(req.headers, config.header))
       req.id = req.headers[config.header];
     else
       req.id = config.prefix + ':' + id;
-    req.passHeaders={};
+    req.passHeaders = {};
     req.passHeaders[config.header] = req.id;
     next();
   };
